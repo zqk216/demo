@@ -17,24 +17,32 @@ export default class About extends Vue {
 
     // data
     data: LoginData = {
-        pageName: 'login'
-    }
+        pageName: 'login',
+        arr: [ "1", "2", "4", "55"],
+        myOrder: 123456789
+    };
 
     created() {
-        // 
-    }
+        
+    };
+
+    begin() {
+        for (let i in this.data.arr) { 
+            console.log(this.data.arr[i])
+        }
+    };
 
     activated() {
         //
-    }
+    };
 
     mounted() {
-        //
-    }
+        this.begin()
+    };
 
     // 初始化函数
     init() {
         //
-    }
+    };
 
 }

@@ -1,3 +1,5 @@
+import demo from '@/store/module/demo';
+
 /**
  * meta 可配置参数
  * @param {boolean} icon 页面icon
@@ -27,6 +29,16 @@ export default [
       icon: '',
       keepAlive: true,
       title: 'index'
+    }
+  },
+  {
+    path: '/demo',
+    name: 'demo',
+    component: () => import('@/views/demo/demo.vue'),
+    meta: {
+      icon: '',
+      keepAlive: true,
+      title: 'demo'
     }
   }
 ]

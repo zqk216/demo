@@ -1,6 +1,8 @@
 // login.Data 参数类型
 export interface LoginData {
-  pageName: string
+  pageName: string,
+  arr: string[],
+  myOrder: number
 }
 
 // VUEX login.State 参数类型

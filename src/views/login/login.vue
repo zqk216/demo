@@ -2,7 +2,7 @@
 	<div class="login-wrap">
 		{{data.pageName}}
 		<div>
-			<Test></Test>
+			<Test :aaa= data.arr :my= data.myOrder></Test>
 		</div>
 	</div>
 </template>
